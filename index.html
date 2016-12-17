@@ -8,119 +8,70 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
-    <style type="text/css">
-        .container-background {
-            background-color: #9CD2EA;
-            margin-top: 10%;
-            width: 50%;
-            padding-top: 1%;
-        }
-        .jumbo-color {
-            background-color: #7BA7BB;
-            margin-left: 7%;
-            margin-right: 10%;
-            box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);
-        }
 
-        .keyboard {
-            width: 20%;
-            cursor: pointer;
-            /* Smoothing out hover and active states using css3 transitions */
-            transition: all 0.2s ease;
-        }
-        .top{
-            margin-top: 30px;
-        }
-        .keyboard p {
-            /*float: center;*/
-            position: relative;
-            
-            /*top: 0;*/
-            width: 55px;
-            height: 36px;
-
-            background: white;
-            border-radius: 3px;
-            box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
-
-            margin: 1em 1em 1em 2em;
-
-            color: #888;
-            line-height: 36px;
-            text-align: center;
-
-            /* prevent selection of text inside keys */
-            user-select: none;
-        }
-
-        .keyboard p:hover {
-            background: #9c89f6;
-            box-shadow: 0px 4px #6b54d3;
-            color: white;
-        }
-
-        .keyboard p:active {
-            box-shadow: 0px 0px #6b54d3;
-            top: 4px;
-        }
-
-        .keyboard p.operator {
-            background-color: #526DA7;
-            color: #E7C34C;
-            line-height: 36px;
-        }
-
-    </style>
+    <!-- custom -->
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div class="container container-background">
+    <div class="col-lg-4 offset-lg-4" id="calculator">
         <div class="row top">
-            <div class="col-xs-12">
-                <div class="jumbotron jumbo-color">
+            <div class="col-lg-3 col-xs-3">
+                <p class="keyboard clear">C</p>
+            </div>
+            <div class="col-xs-9">
+                <div class="jumbotron jumbo-color screen">
 
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-3 col-xs-3 keyboard">
-                <p>7</p>
+            <div class="col-lg-3 col-xs-3 col-md-4">
+                <p class="keyboard">7</p>
             </div>
-            <div class="col-lg-3 col-xs-3 keyboard">
-                <p>8</p>
+            <div class="col-lg-3 col-xs-3 col-md-3">
+                <p class="keyboard">8</p>
             </div>
-            <div class="col-lg-3 col-xs-3 keyboard">
-                <p>9</p>
+            <div class="col-lg-3 col-xs-3 col-md-3">
+                <p class="keyboard">9</p>
             </div>
-            <div class="col-lg-3 col-xs-3 keyboard">
-                <p class="operator">+</p>
+            <div class="col-lg-3 col-xs-3 col-md-3">
+                <p class="keyboard" class="operator">+</p>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-3 col-xs-3 keyboard">
-                <p>4</p>
+            <div class="col-lg-3 col-xs-3 col-md-3">
+                <p class="keyboard">4</p>
             </div>
-            <div class="col-lg-3 col-xs-3 keyboard">
-                <p>5</p>
+            <div class="col-lg-3 col-xs-3 col-md-3">
+                <p class="keyboard">5</p>
             </div>
-            <div class="col-lg-3 col-xs-3 keyboard">
-                <p>6</p>
+            <div class="col-lg-3 col-xs-3 col-md-3">
+                <p class="keyboard">6</p>
             </div>
-            <div class="col-lg-3 col-xs-3 keyboard">
-                <p class="operator">-</p>
+            <div class="col-lg-3 col-xs-3 col-md-3">
+                <p class="keyboard" class="operator">-</p>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-3 col-xs-3 keyboard">
-                <p>1</p>
+            <div class="col-lg-3 col-xs-3 col-md-3">
+                <p class="keyboard">1</p>
             </div>
-            <div class="col-lg-3 col-xs-3 keyboard">
-                <p>2</p>
+            <div class="col-lg-3 col-xs-3 col-md-3">
+                <p class="keyboard">2</p>
             </div>
-            <div class="col-lg-3 col-xs-3 keyboard">
-                <p>3</p>
+            <div class="col-lg-3 col-xs-3 col-md-3">
+                <p class="keyboard">3</p>
             </div>
-            <div class="col-lg-3 col-xs-3 keyboard">
-                <p class="operator">X</p>
+            <div class="col-lg-3 col-xs-3 col-md-3">
+                <p class="keyboard operator">÷</p>
+            </div>
+            <div class="col-lg-3 col-xs-3 col-md-3 ">
+                <p class="keyboard">0</p>
+            </div>
+            <div class="col-lg-3 col-xs-3 col-md-3 ">
+                <p class="keyboard dot">.</p>
+            </div>
+            <div class="col-lg-3 col-xs-3 col-md-3 ">
+                <p class="eval keyboard">=</p>
+            </div>
+            <div class="col-lg-3 col-xs-3 col-md-3 ">
+                <p class="operator keyboard">x</p>
             </div>
         </div>
     </div>
