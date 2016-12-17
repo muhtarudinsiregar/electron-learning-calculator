@@ -32,7 +32,8 @@
     padding-top: 1rem;
 }
 .screen {
-    padding: 20px;
+    height: 40px;
+    padding: 4px;
     margin-bottom: 0;
     background-color: #7BA7BB;
     box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);
